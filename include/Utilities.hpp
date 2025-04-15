@@ -1,5 +1,6 @@
 #pragma once
 #include <stdexcept>
+#include <string>
 class ProcessorTypeNotFound : public std::exception {
     private:
     std::string msg;
