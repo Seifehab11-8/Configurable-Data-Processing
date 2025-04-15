@@ -8,16 +8,16 @@
 
 std::shared_ptr<Processor>ProcessorFactory::create(std::string type, double threshold, int maxRetries)
 {
-    if(type == "AudioProcessor") {
+    if(type == "Audio") {
         return std::make_shared<AudioProcessor>(AudioProcessor(type, threshold, maxRetries));
     }
-    else if(type == "ImageProcessor") {
+    else if(type == "Image") {
         return std::make_shared<ImageProcessor>(ImageProcessor(type, threshold, maxRetries));
     }
-    else if(type == "TextProcessor") {
+    else if(type == "Text") {
         return std::make_shared<TextProcessor>(TextProcessor(type, threshold, maxRetries));
     }
-    else if(type == "NumericProcessor") {
+    else if(type == "Numeric") {
         return std::make_shared<NumericProcessor>(NumericProcessor(type, threshold, maxRetries));
     }
     throw ProcessorTypeNotFound("This type is not found your file is not being processed");

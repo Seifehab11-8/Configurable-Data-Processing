@@ -3,7 +3,6 @@
 
 NumericProcessor::NumericProcessor() : Processor()
 {
-
 }
 
 NumericProcessor::NumericProcessor(std::string type, double threhold, int maxRetries) : Processor(type, threhold, maxRetries)
