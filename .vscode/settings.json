@@ -70,7 +70,8 @@
         "stop_token": "cpp",
         "text_encoding": "cpp",
         "thread": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "map": "cpp"
     },
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#fa1b49",
